@@ -1,0 +1,60 @@
+.navbar {
+	&__links {
+		background: $azul-oscuro;
+		display: flex;
+		justify-content: space-between;
+		padding: 10px 114px 15px;
+	}
+	&__segments {
+		display: flex;
+		li {
+			font-size: 12px;
+			color: #fff;
+			list-style: none;
+			padding: 0 20px;
+			border-left: 1px solid rgba(255, 255, 255, 0.214);
+            cursor: pointer;
+			span {
+				font-family: 'Telefonica-bold';
+			}
+			&:first-child {
+				border-left: none;
+			}
+		}
+	}
+	&__interest {
+		display: flex;
+		li {
+			color: #fff;
+			list-style: none;
+			padding: 0 30px;
+			font-size: 12px;
+            cursor: pointer;
+		}
+		&-link {
+			color: #fff;
+			text-decoration: none;
+			display: flex;
+			&::before {
+				content: '';
+				width: 18px;
+				height: 18px;
+				margin-right: 8px;
+				display: block;
+			}
+			&--notification::before {
+				background: url(/assets/icons/bell.svg) no-repeat;
+			}
+			&--offers::before {
+				background: url(/assets/icons/offers.svg) no-repeat;
+			}
+			&--callme::before {
+				background: url(/assets/icons/phone.svg) no-repeat;
+			}
+            span{
+                font-family: 'telefonica-bold';
+                margin-left: 3px;
+            }
+		}
+	}
+}
