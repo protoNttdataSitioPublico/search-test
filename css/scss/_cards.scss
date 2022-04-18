@@ -1,0 +1,48 @@
+.search-container{
+    display: flex;
+    padding: 40px 115px ;
+    @media (max-width:1000px) {
+        padding: 25px 15px;
+    }
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    @media (max-width:1000px) {
+        display: none;
+        
+    }
+    &__item{
+        background-color: $azul-oscuro;
+        width: 270px;
+        height: 320px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px 35px 30px;
+        h3{
+            font-size: 24px;
+            color: #ffffff;
+            font-family: 'Telefonica-bold';
+        }
+        p{
+            color: #ffffff;
+            font-size: 16px;
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+            color: #ffffff;
+            padding: 12px 45px;
+            background: $azul-movistar;
+            border-radius: 30px;
+            &:hover{
+                background: #017dc0;
+            }
+        }
+    }
+}

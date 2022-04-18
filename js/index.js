@@ -10,7 +10,7 @@ const search = () => {
 	let texto = input.value.toLowerCase().trim()
 
 	sessionStorage.setItem('searchTest', texto)
-	console.log('send', 'event', 'searchTest', 'click', texto)
+	ga('send', 'event', 'searchTest', 'search', texto)
 
 	setTimeout(() => {
 		window.location.href = './result.html'

@@ -1,0 +1,41 @@
+.recent {
+	background: url(/assets/img/banner-header-search.svg) no-repeat center right;
+	background-color: #0b2739;
+	height: 180px;
+	padding: 50px 100px 40px;
+	margin-bottom: 45px;
+	@media (max-width: 1000px) {
+		padding: 43px 15px 10px;
+	}
+	&__title {
+		color: #ffffff;
+		font-style: 24px;
+		font-family: 'Telefonica-bold';
+		margin-bottom: 25px;
+		@media (max-width: 1000px) {
+			margin-bottom: 40px;
+		}
+	}
+	&__chip {
+		display: flex;
+		gap: 8px;
+		&::-webkit-scrollbar {
+			display: none;
+		}
+		@media (max-width: 1000px) {
+			overflow-x: scroll;
+		}
+	}
+	&__chip-link {
+		color: #ffffff;
+		text-decoration: none;
+		border: 1px #fff solid;
+		border-radius: 30px;
+		padding: 8px 15px;
+		white-space: nowrap;
+		&:hover {
+			color: #019df4;
+			border: #019df4 1px solid;
+		}
+	}
+}

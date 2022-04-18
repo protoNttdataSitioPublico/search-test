@@ -10,6 +10,17 @@
   font-family: "Telefonica-ligth";
   src: url(/assets/fonts/Telefonica-Light.otf);
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Telefonica-regular";
+  background-color: #f3f3f3;
+}
+
 .navbar__links {
   background: #0b2739;
   display: flex;
@@ -69,14 +80,139 @@
   margin-left: 3px;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.recent {
+  background: url(/assets/img/banner-header-search.svg) no-repeat center right;
+  background-color: #0b2739;
+  height: 180px;
+  padding: 50px 100px 40px;
+  margin-bottom: 45px;
+}
+@media (max-width: 1000px) {
+  .recent {
+    padding: 43px 15px 10px;
+  }
+}
+.recent__title {
+  color: #ffffff;
+  font-style: 24px;
+  font-family: "Telefonica-bold";
+  margin-bottom: 25px;
+}
+@media (max-width: 1000px) {
+  .recent__title {
+    margin-bottom: 40px;
+  }
+}
+.recent__chip {
+  display: flex;
+  gap: 8px;
+}
+.recent__chip::-webkit-scrollbar {
+  display: none;
+}
+@media (max-width: 1000px) {
+  .recent__chip {
+    overflow-x: scroll;
+  }
+}
+.recent__chip-link {
+  color: #ffffff;
+  text-decoration: none;
+  border: 1px #fff solid;
+  border-radius: 30px;
+  padding: 8px 15px;
+  white-space: nowrap;
+}
+.recent__chip-link:hover {
+  color: #019df4;
+  border: #019df4 1px solid;
 }
 
-body {
-  font-family: "Telefonica-regular";
+.result {
+  margin-right: 30px;
+}
+.result__title {
+  margin-bottom: 25px;
+  color: #313235;
+  font-size: 16px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #CED4D7;
+}
+.result__list {
+  list-style: none;
+}
+.result__item {
+  margin-bottom: 35px;
+}
+.result__link {
+  text-decoration: none;
+  color: #0b2739;
+}
+.result__link-title {
+  color: #019df4;
+  font-family: "Telefonica-bold";
+  font-size: 18px;
+}
+.result__link-url {
+  color: #0b2739;
+  font-size: 12px;
+}
+.result__description {
+  color: #000;
+  line-height: 27px;
+  font-size: 16px;
+}
+
+.search-container {
+  display: flex;
+  padding: 40px 115px;
+}
+@media (max-width: 1000px) {
+  .search-container {
+    padding: 25px 15px;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+@media (max-width: 1000px) {
+  .card {
+    display: none;
+  }
+}
+.card__item {
+  background-color: #0b2739;
+  width: 270px;
+  height: 320px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 35px 30px;
+}
+.card__item h3 {
+  font-size: 24px;
+  color: #ffffff;
+  font-family: "Telefonica-bold";
+}
+.card__item p {
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+}
+.card__item a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 12px 45px;
+  background: #019df4;
+  border-radius: 30px;
+}
+.card__item a:hover {
+  background: #017dc0;
 }
 
 /*# sourceMappingURL=result-pages.css.map */

@@ -11,28 +11,40 @@
 
 <body>
 
-    <div class="navbar">
-        <div class="navbar__links">
-            <ul class="navbar__segments">
-                <li><a href="https://ww2.movistar.cl/"></a>Personas</li>
-                <li><a href="https://ww2.movistar.cl/empresas/"></a><span>Empresas</span></li>
-                <li><a href="https://ww2.movistar.cl/corporaciones/"></a>Corporaciones</li>
-            </ul>
-            <ul class="navbar__interest">
-                <li><p class="navbar__interest-link navbar__interest-link--notification">Revisa las últimas <span>novedades</span></p></li>
-                <li><a href="" class="navbar__interest-link navbar__interest-link--offers">Ofertas Especiales <span>Mayo</span></a></li>
-                <li><a href="" class="navbar__interest-link navbar__interest-link--callme">Contrata aquí <span> 800 200 400</span></a></li>
-            </ul>
+    <div class="recent">
+        <h2 class="recent__title">Búsquedas recientes</h2>
+        <div class="recent__chip">
+            <a href="#" class="recent__chip-link">Internet fibra empresas</a>
+            <a href="#" class="recent__chip-link">Planes portabilidad + equipo</a>
+            <a href="#" class="recent__chip-link">Planes Grupale</a>
+            <a href="#" class="recent__chip-link">Planes 5G</a>
+            <a href="#" class="recent__chip-link">Central Virtual</a>
         </div>
-        <!-- aqui va la otra parte del menui-->
     </div>
     <!-- busquedas recientes -->
-    <div>
-        <ul class="result">
+   <div class="search-container">
+    <div class="result">
+        <h2 class="result__title">Resultados de la búsqueda</h2>
+        <ul class="result__list" id="result">
         </ul>
-        <ul class="other-result">
+        <ul class="result__list" id="otherResult">
         </ul>
     </div>
+    <div class="card">
+        <div class="card__item">
+            <img src="./assets/img/planes-moviles.svg" alt="">
+            <h3>Planes Móviles</h3>
+            <p>Los mejores equipos para tu empresa</p>
+            <a href="#" class="card__link">Conoce más</a>
+        </div>
+        <div class="card__item">
+            <img src="./assets/img/servicios-fijos.svg" alt="">
+            <h3>Servicios Fijos</h3>
+            <p>La comunicación y conectividad que tu empresa necesita</p>
+            <a href="#" class="card__link">Conoce más</a>
+        </div>
+    </div>
+   </div>
     <!-- footer -->
 
     <script src="/js/filterResult.js"></script>

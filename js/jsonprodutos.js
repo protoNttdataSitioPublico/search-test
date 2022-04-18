@@ -3,7 +3,7 @@ const datos = [
 		titulo: 'Internet Fibra Empresas',
 		descripcion: 'Únete a la fibra óptica de Movistar Empresas.',
 		urlUTM: '',
-		url: 'https://ww2.movistar.cl/empresas/productos-y-servicios/internet-fijo/internet-empresas/',
+		url: 'ww2.movistar.cl > empresas > Internet Fibra Empresas',
 		keywords: ['fibra empresas', 'internet fibra', 'fibra óptica', 'fibra simétrica', 'Giga simétrica', 'internet empresas'],
 	},
 	{
@@ -88,63 +88,3 @@ const datos = [
 		keywords: ['motorola', 'moto g', 'motorola moto g20', 'moto g20', 'g20'],
 	},
 ]
-
-let resultado, arrayNuevo
-
-const filterSearch = () => {
-	let texto = sessionStorage.getItem('searchTest')
-
-	console.log(texto)
-
-	resultado = datos.filter((dato) => dato.keywords.filter((keyword) => keyword.includes(texto)).length > 0)
-
-	if (resultado <= 0) {
-		console.log('send', 'event', 'searchTest', 'result', 'no hizo match')
-	}else{
-		console.log('send', 'event', 'searchTest', 'result', 'hizo match')
-	}
-	console.log(resultado)
-
-	arrayNuevo = []
-
-	for (var i = 0; i < datos.length; i++) {
-		var igual = false
-		for (var j = 0; (j < resultado.length) & !igual; j++) {
-			if (datos[i]['titulo'] == resultado[j]['titulo']) {
-				igual = true
-			}
-		}
-		if (!igual) arrayNuevo.push(datos[i])
-	}
-
-	console.log(arrayNuevo)
-
-	return resultado, arrayNuevo
-}
-filterSearch()
-// 
-resultado.map((result) => {
-	let li = document.createElement('li')
-	li.className = 'result__item'
-	li.innerHTML = `
-        <a class="result__link" href="${result.url}">
-            <h3 class="result__link-title" >${result.titulo}</h3>
-            <p class="result__link-url">${result.url}</p>  
-        </a>
-        <p class="result__description" >${result.descripcion}</p>
-        `
-	document.querySelector('#result').appendChild(li)
-})
-
-arrayNuevo.map((result) => {
-	let li = document.createElement('li')
-	li.className = 'result__item'
-	li.innerHTML = `
-         <a class="result__link" href="${result.url}">
-             <h3 class="result__link-title">${result.titulo}</h3>
-             <p class="result__link-url">${result.url}</p>  
-         </a>
-         <p class="result__description" >${result.descripcion}</p>
-         `
-	document.querySelector('#otherResult').appendChild(li)
-})

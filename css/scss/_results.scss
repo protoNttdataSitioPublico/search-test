@@ -1,0 +1,37 @@
+.result{
+    margin-right: 30px;
+    &__title{
+        margin-bottom: 25px;
+        color: $gris-900;
+        font-size: 16px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #CED4D7;
+
+    }
+    &__list{
+        list-style: none;
+
+    }
+    &__item{
+        margin-bottom: 35px;
+    }
+    &__link{
+        text-decoration: none;
+        color: $azul-oscuro;
+    }
+    &__link-title{
+        color: $azul-movistar;
+        font-family: 'Telefonica-bold';
+        font-size: 18px;
+
+    }
+    &__link-url{
+        color: $azul-oscuro;
+        font-size: 12px;
+    }
+    &__description{
+        color: #000;
+        line-height: 27px;
+        font-size: 16px;
+    }
+}
