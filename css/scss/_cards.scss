@@ -1,8 +1,13 @@
 .search-container{
     display: flex;
+    width: 100vw;
+    justify-content: space-between;
     padding: 40px 115px ;
     @media (max-width:1000px) {
-        padding: 25px 15px;
+        padding: 20px 15px;
+    }
+    @media (min-width:2300px) {
+        padding: 40px 700px ;
     }
 }
 
@@ -23,7 +28,7 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        padding: 25px 35px 30px;
+        padding: 25px 20px 30px;
         h3{
             font-size: 24px;
             color: #ffffff;
