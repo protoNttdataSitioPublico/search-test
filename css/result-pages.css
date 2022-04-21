@@ -112,6 +112,12 @@ body {
     margin-bottom: 40px;
   }
 }
+@media (max-width: 450px) {
+  .recent__title {
+    margin-bottom: 10px;
+    width: 40px;
+  }
+}
 .recent__chip {
   display: flex;
   gap: 8px;
@@ -122,6 +128,8 @@ body {
 @media (max-width: 1000px) {
   .recent__chip {
     overflow-x: scroll;
+    background: #0b2739;
+    padding: 13px 0;
   }
 }
 .recent__chip-link {

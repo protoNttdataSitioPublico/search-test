@@ -21,6 +21,11 @@
 		margin-bottom: 25px;
 		@media (max-width: 1000px) {
 			margin-bottom: 40px;
+
+		}
+		@media (max-width: 450px) {
+			margin-bottom: 10px;
+			width: 40px;
 		}
 	}
 	&__chip {
@@ -31,6 +36,8 @@
 		}
 		@media (max-width: 1000px) {
 			overflow-x: scroll;
+			background: $azul-oscuro;
+			padding: 13px 0;
 		}
 	}
 	&__chip-link {
