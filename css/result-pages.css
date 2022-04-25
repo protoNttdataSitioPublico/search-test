@@ -148,6 +148,11 @@ body {
 .result {
   margin-right: 50px;
 }
+@media (max-width: 450px) {
+  .result {
+    margin-right: 0;
+  }
+}
 .result__title {
   margin-bottom: 25px;
   color: #313235;
@@ -179,10 +184,14 @@ body {
   line-height: 27px;
   font-size: 16px;
 }
+@media (max-width: 450px) {
+  .result__description {
+    text-align: justify;
+  }
+}
 
 .search-container {
   display: flex;
-  width: 100vw;
   justify-content: space-between;
   padding: 40px 115px;
 }
